@@ -1,11 +1,12 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:talkit/features/signin/view/pages/_signin.dart';
 import 'package:talkit/features/splash/view/pages/_splash.dart';
-
 import 'core/theme/_theme.dart';
 
 void main()async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(const ProviderScope(child: MyApp()));
 }
 
@@ -16,10 +17,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: Apptheme.baseLightTheme(),
       darkTheme: Apptheme.baseDarkTheme(),
       themeMode: ThemeMode.system,
-      home: SignInPage(),
+      home: SplashScreen(),
     );
   }
 }

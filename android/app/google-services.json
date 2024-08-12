@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "338038841942",
+    "project_id": "talkit-aa66c",
+    "storage_bucket": "talkit-aa66c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:338038841942:android:a5c78df280851421b0d1f7",
+        "android_client_info": {
+          "package_name": "com.example.talkit"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDB1Gkmbyoos3Z1X7_Cur_BGDEIIggrkvQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
